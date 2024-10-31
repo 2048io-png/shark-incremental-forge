@@ -6,10 +6,9 @@ const FORGE = {
         time: [10,300,6000,1e41],
         cost: [
             [
-                ['fish','e3',true],
+                ['fish','1e18',true],
             ],[
-                ['fish','e100',true],
-                ['prestige','e4',true],
+                ['fish','1e1000',true],
             ],[
                 ['diamond',1e17],
                 ['obsidian',1e5],
@@ -26,11 +25,11 @@ const FORGE = {
         time: [150, 300, 600],
         cost: [
             [
-                ['fish','e3',true],
+                ['fish','1e18',true],
             ],[
-                ['fish','e10',true],
+                ['fish','1e60',true],
             ],[
-                ['fish','e36',true],
+                ['fish','1e800',true],
             ],
         ],
 
