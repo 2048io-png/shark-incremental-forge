@@ -6,7 +6,7 @@ const FORGE = {
         time: [10,300,6000,1e41],
         cost: [
             [
-                ['fish','1e18',true],
+                ['fish',1e18,true],
             ],[
                 ['fish','1e1000',true],
             ],[
@@ -20,14 +20,14 @@ const FORGE = {
     },
     shark_dlc: {
         max: 3,
-        unl: ()=>hasForgeUpgrade('anvil'),
+        unl: ()=>true,
 
         time: [150, 300, 600],
         cost: [
             [
-                ['fish','1e18',true],
+                ['fish',1e18,true],
             ],[
-                ['fish','1e60',true],
+                ['fish',1e60,true],
             ],[
                 ['fish','1e800',true],
             ],
