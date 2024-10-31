@@ -19,6 +19,27 @@ const FORGE = {
             ],
         ],
     },
+    shark_dlc: {
+        max: 3,
+        unl: ()=>hasForgeUpgrade('anvil'),
+
+        time: [150, 300, 600],
+        cost: [
+            [
+                ['fish',1e3],
+            ],[
+                ['fish',1e10],
+            ],[
+                ['fish',1e36],
+            ],
+        ],
+
+        effect(l) {
+            var x = Decimal.mul(l,0.05).add(1)
+
+            return x
+        },
+    },
     drill: {
         max: 8,
         unl: ()=>hasForgeUpgrade('anvil',999),
@@ -63,7 +84,7 @@ const FORGE = {
     },
     shard: {
         max: 5,
-        unl: ()=>hasForgeUpgrade('anvil'),
+        unl: ()=>hasForgeUpgrade('anvil,999'),
 
         time: [150,300,600,1800,1e45],
         cost: [
@@ -94,7 +115,7 @@ const FORGE = {
     },
     tree: {
         max: 4,
-        unl: ()=>hasForgeUpgrade('anvil'),
+        unl: ()=>hasForgeUpgrade('anvil',999),
 
         time: [150,600,900,6000],
         cost: [
