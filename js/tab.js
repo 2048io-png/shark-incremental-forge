@@ -8,6 +8,15 @@ const TAB_IDS = {
             return !isAutoEnabled('shark') && CURRENCIES.fish.amount.gte(SHARK.cost())
         },
     },
+    'forge': {
+        html: updateForgeHTML,
+
+        notify() {
+            if (player.humanoid.forge.queue != '') return false
+            for (let i of FORGE_KEYS) if (tmp.forge_affords[i]) return true
+            return false
+        },
+    },
     'options': {
         html() {
             for (let [i,x] of Object.entries(CONFIRMATIONS)) {
@@ -139,15 +148,6 @@ const TAB_IDS = {
             return !isAutoEnabled('mining_tier') && CURRENCIES.stone.amount.gte(MINING_TIER.require) || isSSObserved('moon') && player.humanoid.mining_tier.gte(MINING_TIER.ascend_require)
         },
     },
-    'forge': {
-        html: updateForgeHTML,
-
-        notify() {
-            if (player.humanoid.forge.queue != '') return false
-            for (let i of FORGE_KEYS) if (tmp.forge_affords[i]) return true
-            return false
-        },
-    },
     'particle-accel': {
         html: updatePAHtml,
     },
@@ -202,7 +202,10 @@ const TAB_IDS = {
 
 const TABS = [
     {
-        stab: "shark",
+        id: 'shark',
+        stab: [
+            ["forge"],
+        ],
     },{
         stab: "options",
     },{
