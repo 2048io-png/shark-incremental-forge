@@ -6,10 +6,10 @@ const FORGE = {
         time: [10,300,6000,1e41],
         cost: [
             [
-                ['bismuth',1e3],
+                ['fish',1e3],
             ],[
-                ['bismuth',1e7],
-                ['diamond',1e4],
+                ['fish',1e40],
+                ['prestige',100],
             ],[
                 ['diamond',1e17],
                 ['obsidian',1e5],
@@ -21,7 +21,7 @@ const FORGE = {
     },
     drill: {
         max: 8,
-        unl: ()=>hasForgeUpgrade('anvil'),
+        unl: ()=>hasForgeUpgrade('anvil',999),
 
         time: [150, 300, 600, 900, 3000, 6000, 2e7, 1e45],
         cost: [
