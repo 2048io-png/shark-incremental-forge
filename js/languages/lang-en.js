@@ -690,7 +690,7 @@ LANGUAGES.EN = {
 
         'forge': {
             'anvil': ['Anvil Tier','Unlocks new forge upgrades.'],
-            'shark_dlc': ['Shark DLC',`Increases the multiplier of ${toTextStyle('Fish','fish').`],
+            'shark_dlc': ['Shark DLC',`Increases the multiplier of ${toTextStyle('Fish','fish')}.`],
             'drill': ['Drill Tier','Increases the multiplier of <b>Stone</b> mined.'],
             'shard': ['Refined Shard',`Increases the multiplier of ${toTextStyle('Prestige','prestige')} shards.`],
             'tree': ['Extraordinary Tree',`Unlocks new row of the ${toTextStyle('Evolution','humanoid')} tree.`],
