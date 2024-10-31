@@ -13,6 +13,7 @@ const CURRENCIES = {
 
             x = x.pow(sharkUpgEffect('s4')).pow(tmp.explore_eff[2]).pow(coreReactorEffect(0)).pow(getSharkRankBonus('fish')).pow(simpleETEffect(12))
             .pow(remnantUpgEffect(4)).pow(tmp.explore_eff[0][1]).pow(spaceBaseUpgEffect('o2')).pow(spaceBaseUpgEffect('r3')).pow(spaceBaseUpgEffect('t4'))
+            .pow(forgeUpgradeEffect('shark_dlc'))
 
             if (inExploration(0)) x = x.root(2)
             if (hasDepthMilestone(0,3)) x = x.pow(1.05)
