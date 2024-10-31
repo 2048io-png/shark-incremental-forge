@@ -8,8 +8,8 @@ const FORGE = {
             [
                 ['fish',1e3,true],
             ],[
-                ['fish',1e40,true],
-                ['prestige',100,true],
+                ['fish',1e100,true],
+                ['prestige',1e4,true],
             ],[
                 ['diamond',1e17],
                 ['obsidian',1e5],
