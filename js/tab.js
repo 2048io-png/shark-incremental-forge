@@ -242,7 +242,6 @@ const TABS = [
             ["evolution-tree"],
             ["evolution-goal",()=>player.feature>=12],
             ["cultivation",()=>player.feature>=13],
-            ["forge",()=>player.feature>=15],
             ["particle-accel",()=>player.feature>=16],
         ],
     },{
