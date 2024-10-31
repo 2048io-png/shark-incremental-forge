@@ -204,6 +204,7 @@ const TABS = [
     {
         id: 'shark',
         stab: [
+            ["shark"],
             ["forge"],
         ],
     },{
