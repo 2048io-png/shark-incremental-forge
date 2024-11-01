@@ -118,7 +118,7 @@ const PROGRESS = [
     },{
         auto: true,
         get amount() { return player.humanoid.mining_tier },
-        require: 16,
+        require: 0,
     },{
         auto: true,
         get amount() { return player.humanoid.mining_tier },
