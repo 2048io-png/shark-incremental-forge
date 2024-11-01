@@ -24,7 +24,7 @@ const FORGE = {
         max: 3,
         unl: ()=>hasForgeUpgrade('anvil'),
 
-        time: [150, 300, 600],
+        time: [10, 20, 40],
         cost: [
             [
                 ['fish',1e18,true],
@@ -391,13 +391,13 @@ function doForge() {
 }
 
 function updateForgeTemp() {
-    var f15 = player.feature >= 15
+    var f0 = player.feature >= 0
 
-    if (!f15) tmp.forge_affords = {}
+    if (!f0) tmp.forge_affords = {}
     for (let i of FORGE_KEYS) {
         var f = FORGE[i], lvl = player.humanoid.forge.level[i]
 
-        if (f15) tmp.forge_affords[i] = f.unl() && lvl < f.max && f.cost[lvl].filter(x => CURRENCIES[x[0]].amount.lt(x[1])).length == 0;
+        if (f0) tmp.forge_affords[i] = f.unl() && lvl < f.max && f.cost[lvl].filter(x => CURRENCIES[x[0]].amount.lt(x[1])).length == 0;
 
         if (tmp.ss_difficulty && ['drill','shard','shark','refined_shard'].includes(i)) lvl = E(0);
 
