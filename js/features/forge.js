@@ -391,7 +391,7 @@ function doForge() {
 }
 
 function updateForgeTemp() {
-    var f15 = player.feature >= 15
+    var f15 = player.feature >= 00
 
     if (!f15) tmp.forge_affords = {}
     for (let i of FORGE_KEYS) {
