@@ -391,13 +391,13 @@ function doForge() {
 }
 
 function updateForgeTemp() {
-    var f0 = player.feature >= 0
+    var f15 = player.feature >= 0
 
-    if (!f0) tmp.forge_affords = {}
+    if (!f15) tmp.forge_affords = {}
     for (let i of FORGE_KEYS) {
         var f = FORGE[i], lvl = player.humanoid.forge.level[i]
 
-        if (f0) tmp.forge_affords[i] = f.unl() && lvl < f.max && f.cost[lvl].filter(x => CURRENCIES[x[0]].amount.lt(x[1])).length == 0;
+        if (f15) tmp.forge_affords[i] = f.unl() && lvl < f.max && f.cost[lvl].filter(x => CURRENCIES[x[0]].amount.lt(x[1])).length == 0;
 
         if (tmp.ss_difficulty && ['drill','shard','shark','refined_shard'].includes(i)) lvl = E(0);
 
